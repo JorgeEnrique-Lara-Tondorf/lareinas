@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffe6eb, #fff);
+    color: #5a2a3a;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c2185b;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    background: radial-gradient(circle, #ffb6c1, #ffe6eb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* MOMENTS */
+.moments {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.moments h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* CARTA */
+.letter {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.paper {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    line-height: 1.8;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #c2185b;
+}
+
+/* LOGIN */
+.login {
+    height: 100vh;
+    background: linear-gradient(180deg, #ffb6c1, #ffe6eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+/* CORAZONES */
+.corazon {
+    position: fixed;
+    top: -10px;
+    font-size: 22px;
+    animation: caer linear forwards;
+    z-index: 999;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ffb6c1;
+    color: white;
+}

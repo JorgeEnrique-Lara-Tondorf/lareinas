@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestro Año 💖</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="carta.html">Carta 💌</a>
+</nav>
+<!-- AUDIO -->
+<audio id="musica" loop></audio>
+
+<button class="music-btn" onclick="reproducirAleatoria()">
+    ▶ Escuchar una canción para nosotros 💖
+</button>
+<audio id="musica" loop></audio>
+
+<section class="hero">
+    <h1>Nuestro Año Juntos</h1>
+    <p>Cada momento contigo ha sido único</p>
+</section>
+
+<section class="moments">
+    <h2>Nuestros Momentos 💕</h2>
+
+    <div class="gallery">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+    </div>
+</section>
+
+<footer>
+    <p>Hecho con todo mi amor para ti 💖</p>
+</footer>
+
+<script>
+function crearCorazon() {
+    const c = document.createElement("div");
+    c.classList.add("corazon");
+    c.innerText = "💖";
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.animationDuration = Math.random() * 3 + 4 + "s";
+    document.body.appendChild(c);
+
+    setTimeout(() => c.remove(), 7000);
+}
+setInterval(crearCorazon, 700);
+</script>
+
+</body>
+</html>

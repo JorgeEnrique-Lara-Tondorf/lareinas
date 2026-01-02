@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para ti 💌</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">← Volver</a>
+</nav>
+
+<section class="letter">
+    <h2>Mi carta para ti</h2>
+
+    <div class="paper">
+        <p>
+            Amor mío,<br><br>
+            Este año contigo ha sido el más bonito de mi vida.
+            Gracias por cada sonrisa, cada abrazo y cada momento.
+            Me haces mejor solo con existir.<br><br>
+
+            Te elegiría siempre.<br><br>
+            <span class="signature">Te amo ❤️</span>
+        </p>
+    </div>
+</section>
+
+<script>
+setInterval(() => {
+    const c = document.createElement("div");
+    c.classList.add("corazon");
+    c.innerText = "💗";
+    c.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 7000);
+}, 900);
+</script>
+
+</body>
+</html>
